@@ -19,7 +19,7 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return ENV!"', () => {
+    it('should return Mash-Up Love!"', () => {
       expect(appController.getHello()).toBe(`${env.DB_NAME}`);
     });
   });
