@@ -4,6 +4,6 @@ import { env } from 'process';
 @Injectable()
 export class AppService {
   getHello(): string {
-    return 'Hello World!';
+    return `${env.DB_NAME}`;
   }
 }
