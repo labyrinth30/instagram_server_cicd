@@ -19,8 +19,8 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return Docker World"', () => {
-      expect(appController.getHello()).toBe(`Docker World`);
+    it('should return Mash-Up World"', () => {
+      expect(appController.getHello()).toBe(`Mash-Up World`);
     });
   });
 });
