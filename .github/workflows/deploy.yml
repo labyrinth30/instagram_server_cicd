@@ -42,7 +42,7 @@ jobs:
       - name: Docker 이미지 생성
         run: docker build -t instagram-server .
 
-      - name: Docker 이미지에 Tag 붙이기 #login-ecr의 결과값, ECR의 주소를 가져온다.
+      - name: Docker 이미지에 Tag 붙이기
         run: docker tag instagram-server ${{ steps.login-ecr.outputs.registry }}/instagram-server:latest
 
       - name: ECR에 Docker 이미지 Push하기
