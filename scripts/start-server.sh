@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "--------------- 서버 배포 시작 -----------------"
-cd /home/ubuntu/instagram_server_cicd
+cd /home/ubuntu/instagram_server
 npm i
 pm2 kill
 pm2 start dist/main.js --name "backend-server"
