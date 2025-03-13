@@ -53,7 +53,7 @@ jobs:
           script: |
             rm -rf /home/ubuntu/instagram_server_cicd/current
             mkdir /home/ubuntu/instagram_server_cicd/current
-            mv /home/ubuntu/instagram_server_cicd/tobe/project.tar.gz /home/ubuntu/instagram-server/current/project.tar.gz
+            mv /home/ubuntu/instagram_server_cicd/tobe/project.tar.gz /home/ubuntu/instagram_server_cicd/current/project.tar.gz
             cd /home/ubuntu/instagram_server_cicd/current
             tar -xvf project.tar.gz
             npm i
